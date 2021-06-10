@@ -85,8 +85,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <p>If you would like to edit this page you'll find it located at:</p>
             <code>application/views/welcome_message.php</code>
 
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
             <p>The corresponding controller for this page is found at:</p>
             <code>application/controllers/Welcome.php</code>
 
