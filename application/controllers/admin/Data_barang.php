@@ -1,0 +1,52 @@
+
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Data_barang extends CI_Controller
+{
+    public function index()
+    {
+        $data['barang'] = $this->M_barang->tampil_data()->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('admin/data_barang', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function tambah_barang()
+    {
+        $namaBarang = $this->input->post('nama_brg');
+        $kategori   = $this->input->post('kategori');
+        $stok       = $this->input->post('stok');
+        $harga      = $this->input->post('harga');
+        $keterangan = $this->input->post('keterangan');
+        $gambar     = $_FILES['gambar']['name'];
+
+        if ($gambar) {
+            $config['upload_path']          = './uploads';
+            $config['allowed_types']        = 'gif|jpg|jpeg|png';
+
+            $this->load->library('upload', $config);
+
+            if (!$this->upload->do_upload('gambar')) {
+                echo "Gambar gagal di upload";
+                echo $this->upload->display_errors();
+            } else {
+                $gambar = $this->upload->data('file_name');
+
+                $data = [
+                    'nama_brg' => $namaBarang,
+                    'keterangan' => $keterangan,
+                    'kategori' => $kategori,
+                    'harga' => $harga,
+                    'stok' => $stok,
+                    'gambar' => $gambar
+                ];
+
+
+                $this->M_barang->tambah_barang($data, 'tb_barang');
+                redirect('admin/data_barang');
+            }
+        }
+    }
+}
