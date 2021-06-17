@@ -82,4 +82,11 @@ class Data_barang extends CI_Controller
         $this->M_barang->update_barang($where, $data, 'tb_barang');
         redirect('admin/data_barang/');
     }
+
+    public function hapus($id)
+    {
+        $where = ['id_brg' => $id];
+        $this->M_barang->hapus_barang($where, 'tb_barang');
+        redirect('admin/data_barang/');
+    }
 }
