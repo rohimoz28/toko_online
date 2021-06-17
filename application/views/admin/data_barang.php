@@ -37,8 +37,8 @@
                                 <td>Rp.<?= $brg->harga ?> </td>
                                 <td class="text-center">
                                     <button class="btn btn-success"><i class="fas fa-sm fa-info-circle"></i></button>
-                                    <button class="btn btn-secondary"><i class="fas fa-sm fa-edit"></i></button>
-                                    <button class="btn btn-danger"><i class="fas fa-sm fa-trash"></i></button>
+                                    <?= anchor('admin/data_barang/edit/' . $brg->id_brg, '<button class="btn btn-secondary"><i class="fas fa-sm fa-edit"></i></button>') ?>
+                                    <?= anchor('admin/data_barang/hapus/' . $brg->id_brg, '<button class="btn btn-danger"><i class="fas fa-sm fa-trash"></i></button>') ?>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
