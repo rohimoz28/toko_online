@@ -8,8 +8,10 @@
                     <h5 class="card-title"><?= $brg->nama_brg ?></h5>
                     <!-- <p class="card-text"><?= $brg->keterangan ?></p> -->
                     <span class="badge badge-success mb-3">Rp. <?= $brg->harga ?></span><br>
-                    <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Keranjang</a>
-                    <a href="#" class="btn btn-warning btn-sm">Detail</a>
+                    <div class="row justify-content-center">
+                        <?= anchor('dashboard/tambah_ke_keranjang/' . $brg->id_brg, '<div class="mr-2"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Keranjang</button></div>') ?>
+                        <div><button class="btn btn-warning btn-sm">Detail</button></div>
+                    </div>
                 </div>
             </div>
         <?php endforeach; ?>

@@ -116,6 +116,19 @@
                             </div>
                         </li>
 
+                        <!-- Nav Item - Keranjang Belanja -->
+                        <div class="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <?php
+                                    $keranjang = 'Keranjang : ' .  $this->cart->total_items() . ' items';
+                                    ?>
+
+                                    <?= $keranjang; ?>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
