@@ -124,7 +124,7 @@
                                     $keranjang = 'Keranjang : ' .  $this->cart->total_items() . ' items';
                                     ?>
 
-                                    <?= $keranjang; ?>
+                                    <?= anchor('dashboard/detail_keranjang', $keranjang) ?>
                                 </li>
                             </ul>
                         </div>
