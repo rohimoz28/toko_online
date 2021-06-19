@@ -34,4 +34,27 @@ class Dashboard extends CI_Controller
         $this->load->view('detail_keranjang');
         $this->load->view('templates/footer');
     }
+
+    public function hapus_keranjang()
+    {
+        $this->cart->destroy();
+        redirect('dashboard');
+    }
+
+    public function pembayaran()
+    {
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('pembayaran');
+        $this->load->view('templates/footer');
+    }
+
+    public function pembayaran_proses()
+    {
+        $this->cart->destroy();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('pembayaran_proses');
+        $this->load->view('templates/footer');
+    }
 }

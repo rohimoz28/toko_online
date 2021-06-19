@@ -26,4 +26,16 @@
         </tr>
     </table>
 
+    <div class="text-right">
+        <a href="<?= base_url('dashboard/pembayaran') ?>">
+            <div class="btn btn-sm btn-success">Proses Pembayaran</div>
+        </a>
+        <a href="<?= base_url('dashboard/index') ?>">
+            <div class="btn btn-sm btn-secondary">Lanjutkan Belanja</div>
+        </a>
+        <a href="<?= base_url('dashboard/hapus_keranjang') ?>">
+            <div class="btn btn-sm btn-danger">Hapus Keranjang</div>
+        </a>
+    </div>
+
 </div>
