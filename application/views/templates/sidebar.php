@@ -34,25 +34,25 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= base_url('kategori/elektronik') ?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Elektronik</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= base_url('kategori/pakaian_dewasa') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Pakaian Dewasa</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= base_url('kategori/pakaian_anak') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Pakaian Anak</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= base_url('kategori/olahraga') ?>">
                     <i class="fas fa-fw fa-futbol"></i>
                     <span>Olahraga</span></a>
             </li>
