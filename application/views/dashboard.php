@@ -10,7 +10,7 @@
                     <span class="badge badge-success mb-3">Rp. <?= $brg->harga ?></span><br>
                     <div class="row justify-content-center">
                         <?= anchor('dashboard/tambah_ke_keranjang/' . $brg->id_brg, '<div class="mr-2"><button class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Keranjang</button></div>') ?>
-                        <div><button class="btn btn-warning btn-sm">Detail</button></div>
+                        <?= anchor('dashboard/detail_produk/' . $brg->id_brg, '<div class="mr-2"><button class="btn btn-warning btn-sm">Detail</button></div>') ?>
                     </div>
                 </div>
             </div>

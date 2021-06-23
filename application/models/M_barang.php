@@ -42,4 +42,9 @@ class M_barang extends CI_Model
             return array();
         }
     }
+
+    public function detailBarang($id_barang)
+    {
+        return $this->db->where('id_brg', $id_barang)->get('tb_barang')->result();
+    }
 }

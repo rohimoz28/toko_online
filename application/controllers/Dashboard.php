@@ -62,4 +62,13 @@ class Dashboard extends CI_Controller
             echo "Pesanan anda gagal di proses!";
         }
     }
+
+    public function detail_produk($id_barang)
+    {
+        $data['barang'] = $this->M_barang->detailBarang($id_barang);
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('detail_barang', $data);
+        $this->load->view('templates/footer');
+    }
 }
