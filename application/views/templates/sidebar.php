@@ -136,9 +136,9 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <?php if ($this->session->userdata('username')) : ?>
                                     <li>
-                                        <div>Selamat Datang, <?= $this->session->userdata('username') ?>.</div>
+                                        <div>Selamat Datang, <?= $this->session->userdata('username') ?></div>
                                     </li>
-                                    <li><?= anchor('auth/logout', 'Logout') ?></li>
+                                    <li class="ml-3"><?= anchor('auth/logout', 'Logout') ?></li>
                                 <?php else : ?>
                                     <li><?= anchor('auth/login', 'Login') ?></li>
                                 <?php endif; ?>

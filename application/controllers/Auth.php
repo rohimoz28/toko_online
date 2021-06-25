@@ -5,13 +5,17 @@ class Auth extends CI_Controller
 {
     public function login()
     {
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('password', 'Password', 'required');
+        $this->form_validation->set_rules('username', 'Username', 'required', [
+            'required' => 'Username wajib diisi!'
+        ]);
+        $this->form_validation->set_rules('password', 'Password', 'required', [
+            'required' => 'Password wajib diisi!'
+        ]);
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('templates/header');
+            $this->load->view('templates/auth_header');
             $this->load->view('auth/form_login');
-            $this->load->view('templates/footer');
+            $this->load->view('templates/auth_footer');
         } else {
             $auth = $this->M_auth->cek_login();
 
