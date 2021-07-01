@@ -4,7 +4,7 @@ Aplikasi toko online sederhana ini di buat menggunakan framework PHP Codeigniter
 
 Dibuat demi kepentingan pembelajaran penulis dan masih terus dikembangkan. 
 
-![toko_online](https://media.giphy.com/media/cUb592W0EhtwIfHc07/giphy.gif)
+<img src="https://media.giphy.com/media/cUb592W0EhtwIfHc07/giphy.gif" alt="toko_online" width="720"/>
 
 # Fitur
 1. Login user dan admin
