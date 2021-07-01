@@ -11,7 +11,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-store"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Toko Online</div>
+                <div class="sidebar-brand-text mx-3">Online Shop</div>
             </a>
 
             <!-- Divider -->
@@ -34,27 +34,27 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('kategori/elektronik') ?>">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Elektronik</span></a>
+                <a class="nav-link" href="<?= base_url('kategori/komputer') ?>">
+                    <i class="fas fa-fw fa-laptop" aria-hidden="true"></i>
+                    <span>Komputer & Laptop</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('kategori/pakaian_dewasa') ?>">
+                <a class="nav-link" href="<?= base_url('kategori/fashion') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>Pakaian Dewasa</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('kategori/pakaian_anak') ?>">
-                    <i class="fas fa-fw fa-tshirt"></i>
-                    <span>Pakaian Anak</span></a>
+                    <span>Fashion</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('kategori/olahraga') ?>">
                     <i class="fas fa-fw fa-futbol"></i>
                     <span>Olahraga</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('kategori/buku') ?>">
+                    <i class="fa fa-fw fa-book"></i>
+                    <span>Buku</span></a>
             </li>
 
             <!-- Divider -->

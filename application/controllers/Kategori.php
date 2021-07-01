@@ -3,28 +3,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Kategori extends CI_Controller
 {
-    public function elektronik()
+    public function fashion()
     {
-        $data['elektronik'] = $this->M_kategori->elektronik();
+        $data['fashion'] = $this->M_kategori->fashion();
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
-        $this->load->view('kategori/elektronik', $data);
+        $this->load->view('kategori/fashion', $data);
         $this->load->view('templates/footer');
     }
-    public function pakaian_dewasa()
+    public function buku()
     {
-        $data['pakaian_dewasa'] = $this->M_kategori->pakaian_dewasa();
+        $data['buku'] = $this->M_kategori->buku();
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
-        $this->load->view('kategori/pakaian_dewasa', $data);
+        $this->load->view('kategori/buku', $data);
         $this->load->view('templates/footer');
     }
-    public function pakaian_anak()
+    public function komputer()
     {
-        $data['pakaian_anak'] = $this->M_kategori->pakaian_anak();
+        $data['komputer'] = $this->M_kategori->komputer();
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
-        $this->load->view('kategori/pakaian_anak', $data);
+        $this->load->view('kategori/komputer', $data);
         $this->load->view('templates/footer');
     }
     public function olahraga()

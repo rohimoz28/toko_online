@@ -11,7 +11,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-store"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Toko Online</div>
+                <div class="sidebar-brand-text mx-3">Online Shop</div>
             </a>
 
             <!-- Divider -->
@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?= base_url('admin/dashboard_admin'); ?>">
+                <a class="nav-link" href="<?= base_url(); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>

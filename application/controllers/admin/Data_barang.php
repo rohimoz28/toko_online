@@ -81,12 +81,12 @@ class Data_barang extends CI_Controller
         $kategori   = $this->input->post('kategori');
         $stok       = $this->input->post('stok');
         $harga      = $this->input->post('harga');
-        $Keterangan = $this->input->post('Keterangan');
+        $keterangan = $this->input->post('keterangan');
 
         $data = [
             'id_brg'    => $id,
             'nama_brg'  => $nama,
-            'keterangan' => $Keterangan,
+            'keterangan' => $keterangan,
             'kategori'  => $kategori,
             'harga'     => $harga,
             'stok'      => $stok

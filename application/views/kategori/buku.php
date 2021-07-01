@@ -1,7 +1,7 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <div class="row mb-5">
-        <?php foreach ($elektronik as $brg) : ?>
+        <?php foreach ($buku as $brg) : ?>
             <div class="card text-center mb-3 ml-3" style="width: 14rem;">
                 <img src="<?= base_url() . "uploads/" . $brg->gambar; ?>" class="card-img-top img-thumbnail h-50" alt="...">
                 <div class="card-body">

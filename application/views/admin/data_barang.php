@@ -65,10 +65,17 @@
                         <label>Nama Barang</label>
                         <input type="text" class="form-control" name="nama_brg">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>Kategori</label>
                         <input type="text" class="form-control" name="kategori">
-                    </div>
+                    </div> -->
+                    <select class="custom-select" name="kategori">
+                        <option selected>Kategori Barang</option>
+                        <option value="Buku">Buku</option>
+                        <option value="Olahraga">Olahraga</option>
+                        <option value="Komputer">Komputer & Laptop</option>
+                        <option value="Fashion">Fashion</option>
+                    </select>
                     <div class="form-group">
                         <label>Stok</label>
                         <input type="number" class="form-control" name="stok">
