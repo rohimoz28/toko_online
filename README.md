@@ -4,7 +4,7 @@ Aplikasi toko online sederhana ini di buat menggunakan framework PHP Codeigniter
 
 Dibuat demi kepentingan pembelajaran penulis dan masih terus dikembangkan. 
 
-<img src="https://media.giphy.com/media/9t1Lattzwhuz55erbp/giphy.gif" alt="toko_online" width="480"/>
+<img src="https://media.giphy.com/media/9t1Lattzwhuz55erbp/giphy.gif" alt="toko_online" width="600"/>
 
 # Fitur
 1. Login user dan admin
@@ -12,6 +12,15 @@ Dibuat demi kepentingan pembelajaran penulis dan masih terus dikembangkan.
 3. Invoices 
 4. Stok item
 
+# Instalasi
+
+1. `git clone https://github.com/rohimoz28/toko_online.git`
+2. Salin folder ke localhost 
+3. Import database `toko_online.sql`
+4. Buka browser dan ketikkan pada url 
+`localhost/toko_online`
+5. Login admin username: `admin` pass: `1234`
+6. Login user username: `user` pass: `1234`
 # Lisensi
 Aplikasi toko online sederhana bebas di gunakan demi kepentingan pembelajaran. 
 
