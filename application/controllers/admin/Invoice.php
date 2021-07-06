@@ -22,7 +22,7 @@ class Invoice extends CI_Controller
     {
         $data['invoices'] = $this->M_invoice->tampil_data();
         $this->load->view('templates/header');
-        $this->load->view('templates/sidebar');
+        $this->load->view('templates/sidebar_admin');
         $this->load->view('admin/invoice', $data);
         $this->load->view('templates/footer');
     }
@@ -33,7 +33,7 @@ class Invoice extends CI_Controller
         $data['pesanan']    = $this->M_invoice->getIdPesanan($id_invoice);
 
         $this->load->view('templates/header');
-        $this->load->view('templates/sidebar');
+        $this->load->view('templates/sidebar_admin');
         $this->load->view('admin/detail_invoice', $data);
         $this->load->view('templates/footer');
     }

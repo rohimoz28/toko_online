@@ -22,7 +22,7 @@ class Data_barang extends CI_Controller
     {
         $data['barang'] = $this->M_barang->tampil_data()->result();
         $this->load->view('templates/header');
-        $this->load->view('templates/sidebar');
+        $this->load->view('templates/sidebar_admin');
         $this->load->view('admin/data_barang', $data);
         $this->load->view('templates/footer');
     }
